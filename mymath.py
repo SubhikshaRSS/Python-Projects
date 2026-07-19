@@ -19,3 +19,13 @@ def numbersquare(numbers):
 
 def sorting(objects):
     objects.sort(key=lambda x: x[1])
+
+
+def calculate_area(length, width):
+    area = length * width
+    if __name__ == "__main__":
+        print("Running as the main program")
+    else:
+        print("Imported as a module")
+    print(__name__)
+    return area

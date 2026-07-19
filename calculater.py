@@ -26,4 +26,11 @@ print("Result 8:", result8)
 
 import mymath as mm
 result9=mm.add(30, 15)
-print("Result 9:", result9)
+print("Result 9:", result9)   
+
+mm.calculate_area(5, 10)
+print(__name__)
+if __name__ == "__main__":
+    print("Running as the main program")
+else:
+    print("Imported as a module")
