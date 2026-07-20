@@ -1,4 +1,5 @@
 # 1️⃣ Creating Strings
+
 s1 = 'Hello'
 s2 = "World"
 s3 = """This is a multi-line string"""
@@ -121,3 +122,5 @@ print(len("subhiksha"))
 print("\nLooping:")
 for ch in text:
     print(ch)
+
+

@@ -8,7 +8,7 @@ print(random.randint(1, 10))  # Random number between 1 and 10
 print(random.choice([1, 2, 3]))  # Random selection
 
 import datetime
-today = datetime.date.today()
+today = datetime.date.today() #.now,.year,.month,.day can also be used
 print(today)
 
 #import entire package
