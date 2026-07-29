@@ -1,0 +1,13 @@
+#TCP Protocol (SOCK_STREAM)
+import socket
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.bind(("localhost", 5000))
+server.listen(5)
+print("Server waiting...")
+client, address = server.accept()
+print("Connected:", address)
+message = client.recv(1024)
+print("Client says:", message.decode())
+client.send("Hello Client".encode())
+client.close()
+server.close()
